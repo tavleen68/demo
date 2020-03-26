@@ -2,13 +2,13 @@
 <body>
 	<h2 align="center"> Welcome to Wipro Bank</h2>
 	
-	<form action="http://localhost:8086/bankApp/dashboard">
+	<form method="post" action="http://localhost:8086/bankApp/dashboard" modelAttribute="loginModel">
 		UserID: 
-		<input type="text" required></input>
-		<br>
+		<input type="text" required="true"></input>
+		<br></br>
 		Password:
-		<input type="password"></input>
-		<br>
+		<input type="password" required="true"></input>
+		<br></br>
 		<input type="submit" value="Login"></input>
 	</form>
 	
